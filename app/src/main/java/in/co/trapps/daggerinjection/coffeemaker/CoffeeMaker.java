@@ -1,10 +1,15 @@
 package in.co.trapps.daggerinjection.coffeemaker;
 
+import javax.inject.Inject;
+
 /**
  * @author Akash Patra
  */
 public class CoffeeMaker {
+    @Inject
     Heater heater;
+
+    @Inject
     Pump pump;
 
     public void brew() {
