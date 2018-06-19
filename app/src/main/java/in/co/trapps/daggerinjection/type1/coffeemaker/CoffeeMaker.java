@@ -1,4 +1,4 @@
-package in.co.trapps.daggerinjection.coffeemaker;
+package in.co.trapps.daggerinjection.type1.coffeemaker;
 
 import javax.inject.Inject;
 

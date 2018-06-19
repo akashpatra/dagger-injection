@@ -1,4 +1,4 @@
-package in.co.trapps.daggerinjection.coffeemaker;
+package in.co.trapps.daggerinjection.type1.coffeemaker;
 
 import javax.inject.Singleton;
 
@@ -9,17 +9,13 @@ import dagger.Provides;
  * @author Akash Patra
  */
 @Module(
-        injects = CoffeeApp.class
+        injects = CoffeeApp.class,
+        includes = PumpModule.class
 )
 public class CoffeeModule {
     @Provides
     @Singleton
     Heater provideHeater() {
         return new ElectricHeater();
-    }
-
-    @Provides
-    Pump providePump(Thermosiphon pump) {
-        return pump;
     }
 }

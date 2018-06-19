@@ -1,4 +1,4 @@
-package in.co.trapps.daggerinjection.service;
+package in.co.trapps.daggerinjection.type1.service;
 
 /**
  * @author Akash Patra
