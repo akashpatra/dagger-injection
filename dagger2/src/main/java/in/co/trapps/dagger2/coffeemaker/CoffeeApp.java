@@ -2,14 +2,19 @@ package in.co.trapps.dagger2.coffeemaker;
 
 import javax.inject.Inject;
 
-import dagger.ObjectGraph;
-
 /**
  * @author Akash Patra
  */
 public class CoffeeApp implements Runnable {
+    // Field Injection
     @Inject
     CoffeeMaker coffeeMaker;
+
+    // Constructor Injection
+    /*@Inject
+    CoffeeApp(CoffeeMaker coffeeMaker) {
+        this.coffeeMaker = coffeeMaker;
+    }*/
 
     @Override
     public void run() {
@@ -17,8 +22,20 @@ public class CoffeeApp implements Runnable {
     }
 
     public static void main(String[] args) {
-        ObjectGraph objectGraph = ObjectGraph.create(new CoffeeModule());
-        CoffeeApp coffeeApp = objectGraph.get(CoffeeApp.class);
-        coffeeApp.run();
+        // Way 1
+//        CoffeeShop coffeeShop = DaggerCoffeeShop.builder()
+//                .build();
+
+        // Way 2
+        CoffeeShop coffeeShop = DaggerCoffeeShop.create();
+
+        // Constructor Injection
+//        CoffeeApp app = coffeeShop.app();
+//        app.run();
+
+        // Field Injection
+        CoffeeApp app = new CoffeeApp();
+        coffeeShop.inject(app);
+        app.run();
     }
 }

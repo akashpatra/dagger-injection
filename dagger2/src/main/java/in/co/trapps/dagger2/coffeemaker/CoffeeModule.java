@@ -8,14 +8,16 @@ import dagger.Provides;
 /**
  * @author Akash Patra
  */
-@Module(
-        injects = CoffeeApp.class,
-        includes = PumpModule.class
-)
+@Module
 public class CoffeeModule {
     @Provides
     @Singleton
     Heater provideHeater() {
         return new ElectricHeater();
     }
+
+//    @Provides
+//    static Pump providePump(Thermosiphon pump) {
+//        return pump;
+//    }
 }

@@ -6,11 +6,15 @@ import javax.inject.Inject;
  * @author Akash Patra
  */
 public class CoffeeMaker {
-    @Inject
+
     Heater heater;
+    Pump pump;
 
     @Inject
-    Pump pump;
+    CoffeeMaker(Heater heater, Pump pump) {
+        this.heater = heater;
+        this.pump = pump;
+    }
 
     public void brew() {
         heater.on();
