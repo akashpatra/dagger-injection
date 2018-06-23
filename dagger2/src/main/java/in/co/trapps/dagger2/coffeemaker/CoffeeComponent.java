@@ -9,7 +9,7 @@ import dagger.Component;
  */
 @Singleton
 @Component(modules = {CoffeeModule.class, PumpModule.class})
-public interface CoffeeShop {
+public interface CoffeeComponent {
     // Constructor Injection
 //    CoffeeApp app();
 

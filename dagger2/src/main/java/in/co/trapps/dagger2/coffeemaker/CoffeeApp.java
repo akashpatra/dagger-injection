@@ -23,19 +23,19 @@ public class CoffeeApp implements Runnable {
 
     public static void main(String[] args) {
         // Way 1
-//        CoffeeShop coffeeShop = DaggerCoffeeShop.builder()
+//        CoffeeComponent coffeeComponent = DaggerCoffeeComponent.builder()
 //                .build();
 
         // Way 2
-        CoffeeShop coffeeShop = DaggerCoffeeShop.create();
+        CoffeeComponent coffeeComponent = DaggerCoffeeComponent.create();
 
         // Constructor Injection
-//        CoffeeApp app = coffeeShop.app();
+//        CoffeeApp app = coffeeComponent.app();
 //        app.run();
 
         // Field Injection
         CoffeeApp app = new CoffeeApp();
-        coffeeShop.inject(app);
+        coffeeComponent.inject(app);
         app.run();
     }
 }
