@@ -13,6 +13,6 @@ public class MainDao implements IMainDao {
 
     @Override
     public String getResource() {
-        return "This is the resource you are looking for";
+        return "This is the resource you are looking for.";
     }
 }

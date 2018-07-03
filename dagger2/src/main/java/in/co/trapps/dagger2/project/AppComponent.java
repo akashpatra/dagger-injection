@@ -10,6 +10,9 @@ import dagger.Component;
 @Singleton
 @Component(modules = AppModule.class)
 public interface AppComponent {
+    // For Field Injection
 //    void inject(Main main);
+
+    // For Constructor Injection
     Main getMain();
 }

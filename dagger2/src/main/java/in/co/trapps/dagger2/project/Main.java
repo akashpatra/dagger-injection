@@ -14,7 +14,10 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        System.out.println("Hi");
+        System.out.println("\n");
+        System.out.println("*** Hi, Welcome to Dagger World ***");
+        System.out.println("\n");
+
         AppComponent appComponent = DaggerAppComponent.create();
         Main main = appComponent.getMain();
         System.out.println(main.mainBusiness.getResource());
