@@ -6,15 +6,15 @@ import javax.inject.Inject;
  * @author Akash Patra
  */
 public class CoffeeApp implements Runnable {
-    // Field Injection
-    @Inject
-    CoffeeMaker coffeeMaker;
-
     // Constructor Injection
     /*@Inject
     CoffeeApp(CoffeeMaker coffeeMaker) {
         this.coffeeMaker = coffeeMaker;
     }*/
+
+    // Field Injection
+    @Inject
+    CoffeeMaker coffeeMaker;
 
     @Override
     public void run() {
