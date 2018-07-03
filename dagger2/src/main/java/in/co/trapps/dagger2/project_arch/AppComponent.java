@@ -1,4 +1,4 @@
-package in.co.trapps.dagger2.project;
+package in.co.trapps.dagger2.project_arch;
 
 import javax.inject.Singleton;
 
@@ -10,9 +10,9 @@ import dagger.Component;
 @Singleton
 @Component(modules = AppModule.class)
 public interface AppComponent {
-    // For Field Injection
-//    void inject(Main main);
-
     // For Constructor Injection
-    Main getMain();
+//    Main getMain();
+
+    // For Field Injection
+    void inject(Main main);
 }

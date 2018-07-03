@@ -1,4 +1,4 @@
-package in.co.trapps.dagger2.project;
+package in.co.trapps.dagger2.project_arch;
 
 import javax.inject.Inject;
 
