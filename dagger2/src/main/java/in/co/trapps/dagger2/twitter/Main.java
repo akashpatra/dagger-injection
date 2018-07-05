@@ -1,4 +1,4 @@
-package in.co.trapps.dagger2.service;
+package in.co.trapps.dagger2.twitter;
 
 /**
  * @author Akash Patra

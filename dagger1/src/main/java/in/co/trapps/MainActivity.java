@@ -1,4 +1,4 @@
-package in.co.trapps.dagger1;
+package in.co.trapps;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
