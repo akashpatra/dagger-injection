@@ -1,4 +1,4 @@
-package in.co.trapps.dagger2.twitter;
+package in.co.trapps.normal.twitter;
 
 import java.util.ArrayList;
 import java.util.List;
