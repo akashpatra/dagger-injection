@@ -6,7 +6,7 @@ package in.co.trapps.normal.twitter;
 public class Main {
     public static void main(String[] args) {
         OkHttpClient client = new OkHttpClient();
-        TwitterAPI api = new TwitterAPI(client);
+        TwitterApi api = new TwitterApi(client);
         String user = "Akash";
 
         // Tweet

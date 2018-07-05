@@ -8,10 +8,10 @@ import java.util.List;
  */
 public class Timeline {
     private final List<Tweet> cache = new ArrayList<>();
-    private final TwitterAPI api;
+    private final TwitterApi api;
     private final String user;
 
-    public Timeline(String user, TwitterAPI api) {
+    public Timeline(String user, TwitterApi api) {
         this.user = user;
         this.api = api;
     }

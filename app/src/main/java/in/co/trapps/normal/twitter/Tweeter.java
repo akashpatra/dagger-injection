@@ -4,10 +4,10 @@ package in.co.trapps.normal.twitter;
  * @author Akash Patra
  */
 public class Tweeter {
-    private final TwitterAPI api;
+    private final TwitterApi api;
     private final String user;
 
-    public Tweeter(String user, TwitterAPI api) {
+    public Tweeter(String user, TwitterApi api) {
         this.user = user;
         this.api = api;
     }

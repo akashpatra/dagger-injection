@@ -3,10 +3,10 @@ package in.co.trapps.normal.twitter;
 /**
  * @author Akash Patra
  */
-public class TwitterAPI {
+public class TwitterApi {
     private final OkHttpClient client;
 
-    public TwitterAPI(OkHttpClient client) {
+    public TwitterApi(OkHttpClient client) {
         this.client = client;
     }
 
