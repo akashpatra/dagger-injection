@@ -3,8 +3,15 @@ package in.co.trapps.normal.twitter;
 /**
  * @author Akash Patra
  */
-public class Main {
+public class TwitterApp implements Runnable {
+
     public static void main(String[] args) {
+        TwitterApp twitterApp = new TwitterApp();
+        twitterApp.run();
+    }
+
+    @Override
+    public void run() {
         OkHttpClient client = new OkHttpClient();
         TwitterApi api = new TwitterApi(client);
         String user = "Akash";
